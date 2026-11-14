@@ -5,7 +5,7 @@ Menu redesign for Emma's Country Kitchen: a two-sided legal sheet (8.5 x 14), fo
 ## Layout
 
 - `project/` — the design canvas files as published to Claude. `LowerSerif.dc.html` is the food side, `Drinks.dc.html` the drinks side; the other `.dc.html` files are earlier explorations kept for reference. `canvas.json` is the canvas index.
-- `scripts/` — the Python that generates the two live artboards from the menu data. `gen5.py` holds the food menu (items, prices, copy) and builds the food side; `gen6.py` holds the drinks menu and builds the drinks side (it runs gen5 first). `gen3.py` and `data.py` are shared helpers. Run `python3 scripts/gen6.py` from `scripts/` to regenerate both pages into `project/`.
+- `scripts/` — the Python that generates the two live artboards from the menu data. `gen5.py` holds the food menu (items, prices, copy) and builds the food side; `gen6.py` holds the drinks menu and builds the drinks side (it runs gen5 first). `gen3.py` and `data.py` are shared helpers. Run `python3 scripts/gen6.py` from `scripts/` to regenerate both pages into `project/`. `export_logo.py` builds the logo and wordmark exports in `brand/` from the original EPS.
 - `brand/` — the logo and the traced "Emma's" wordmark in vector and raster, for merch. See `brand/README.md`.
 - `source/` — the owner's menus and the logo scan the work started from.
 
