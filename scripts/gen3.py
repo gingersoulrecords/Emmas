@@ -1,5 +1,8 @@
+import os
+HERE = os.path.dirname(os.path.abspath(__file__))
+PROJECT = os.path.join(HERE, '..', 'project') + os.sep
 import json
-exec(open('/home/claude/scripts/data.py').read())
+exec(open(os.path.join(HERE,'data.py')).read())
 FONTS = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;1,400;1,500&amp;family=Alegreya+SC:wght@400;500&amp;family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;family=Alegreya+Sans+SC:wght@400;500&amp;display=swap">'
 def page(title, paper, body, w=816, h=1344, pad="56px 64px 48px"):
     props = json.dumps({"$preview":{"width":w,"height":h}})
@@ -104,7 +107,7 @@ H_cover = f'''<div style="flex: 1; display: flex; flex-direction: column; align-
 </div>
 <div style="font-family: 'Alegreya Sans SC', sans-serif; font-weight: 400; font-size: 12.5px; letter-spacing: 0.22em; color: {LABEL}; text-align: center">brunch, all day</div>'''
 
-out="/home/claude/eck/project/"
+out=PROJECT
 open(out+"Lowercase.dc.html","w").write(page("Option F: all lowercase", "#FBF8F1", F))
 open(out+"Italic.dc.html","w").write(page("Option G: italic names", "#F6F1E7", G))
 open(out+"FoldCover.dc.html","w").write(page("Option H: half-fold cover", "#F3EDE2", H_cover, w=816, h=672, pad="56px 64px 48px"))

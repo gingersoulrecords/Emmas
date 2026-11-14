@@ -1,5 +1,8 @@
+import os
+HERE = os.path.dirname(os.path.abspath(__file__))
+PROJECT = os.path.join(HERE, '..', 'project') + os.sep
 import json
-exec(open('/home/claude/scripts/gen5.py').read())
+exec(open(os.path.join(HERE,'gen5.py')).read())
 cocktails = [
  ("Emma's Caesar","11","TAG No. 5 vodka, Clamato, horseradish, Worcestershire, and our house hot sauce, with a celery salt rim and a dill pickle.","1 oz",False),
  ("mimosa","11","Fresh squeezed orange juice topped with Montelliana prosecco.","4 oz",False),
