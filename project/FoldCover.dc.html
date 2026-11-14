@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Option H: half-fold cover</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;1,400;1,500&amp;family=Alegreya+SC:wght@400;500&amp;family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;family=Alegreya+Sans+SC:wght@400;500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#2E2620}a:hover{color:#000}
+</style>
+</helmet>
+<div style="width: 816px; height: 672px; box-sizing: border-box; padding: 56px 64px 48px; background: {{paper}}; color: #2E2620; font-family: 'Alegreya Sans', sans-serif; display: flex; flex-direction: column">
+<div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center">
+<img src="/_blob/1518580469b252f3644d0fd3731bbc68" alt="Emma's Country Kitchen" style="width: 300px; height: 250px; display: block">
+<div style="font-family: 'Alegreya', serif; font-style: italic; font-size: 17px; color: #5E534A; margin-top: 28px">Biscuits from Grandma's recipe, bacon we cure ourselves, and everything else baked this morning.</div>
+</div>
+<div style="font-family: 'Alegreya Sans SC', sans-serif; font-weight: 400; font-size: 12.5px; letter-spacing: 0.22em; color: #6E6257; text-align: center">brunch, all day</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"paper": {"editor": "color", "default": "#F3EDE2", "options": ["#FBF8F1", "#FFFFFF", "#F6F1E7", "#F3EDE2"]}, "$preview": {"width": 816, "height": 672}}'>
+class Component extends DCLogic {
+renderVals() {
+return { paper: this.props.paper ?? '#F3EDE2' };
+}
+}
+</script>
+</body>
+</html>
